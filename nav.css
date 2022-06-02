@@ -1,0 +1,49 @@
+/* CSS stylesheet for the nav element */
+.nav ul {
+  padding: 20px;
+  margin: 0;
+  font-family: monospace;
+  background: rgb(13, 11, 15);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.nav ul li a:hover {
+  background: white;
+  border-radius: 0.5rem;
+  color: black;
+  transition: 1seconds ease-in;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(243, 238, 238);
+  padding: 10px;
+  border: 20px transparent;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  word-spacing: 3em;
+}
+
+@media (max-width: 400px) {
+  .container ul,
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav li:hover,
+  .container ul:hover {
+    justify-content: space-between;
+    height: fit-content;
+  }
+}
